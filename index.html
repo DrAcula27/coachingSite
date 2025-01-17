@@ -2,77 +2,207 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Your Name - Coach</title>
-    <link rel="stylesheet" href="./normalize.css" />
-    <link rel="stylesheet" href="./styles.css" />
-    <script defer src="./main.js"></script>
+    <meta name="author" content="Danielle Andrews" />
+    <meta
+      name="description"
+      content="a demo coaching site for Rincewind, one of the main characters in Sir Terry Pratchett's Discworld series"
+    />
+    <meta
+      name="keywords"
+      content="coach, coaching, life coach, Rincewind, Discworld, Terry Pratchett"
+    />
+
+    <title>Rincewind Coaching</title>
+
+    <link rel="icon" type="image/png" href="./img/logo-circle.png" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script defer src="./js/main.js"></script>
   </head>
   <body>
-    <!-- page navigation -->
-    <nav>
-      <div class="logo">Logo</div>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#schedule">Schedule a Meeting</a></li>
-        <li><a href="#payment">Make a Payment</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
-    </nav>
+    <!-- header -->
+    <header id="header">
+      <h1>Rincewind Coaching</h1>
+      <p>Thriving in Chaos. One Step at a Time.</p>
+    </header>
 
-    <!-- home -->
-    <section id="home">
-      <h1>Hi, I am Coach <i>Your Name</i>!</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Soluta nulla officia quaerat ducimus saepe, placeat beatae
-        eligendi doloribus enim iure rerum, consequuntur dolorum
-        provident ex? Corporis dolorum vel facilis quidem.
-      </p>
-    </section>
+    <!-- page navigation -->
+    <nav id="nav" class="sticky">
+      <a href="#header">
+        <img
+          src="./img/banner.png"
+          alt="Rincewind Coaching"
+          class="logo"
+        />
+      </a>
+      <div class="nav-menu">
+        <button id="hamburgerBtn" class="hamburger">☰</button>
+        <ul class="nav-links">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#schedule">Schedule a Meeting</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </div>
+      <a href="#">Make a Payment</a>
+    </nav>
 
     <!-- about -->
     <section id="about">
+      <img src="./img/logo-wb.png" alt="logo" />
       <h2>About Me</h2>
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Impedit aspernatur accusantium dolorem optio dolor harum
-        laborum deserunt voluptatibus, saepe ab nulla ut ipsam
-        consequatur iusto ea rerum neque earum quaerat.
+        Welcome to Rincewind Coaching! I,m Rincewind, a seasoned
+        expert in survival and chaos navigation. With years of
+        experience avoiding calamity and adapting to unpredictable
+        situations, I help clients thrive in the most unexpected of
+        circumstances. Let me show you how to turn running from
+        problems into a path to success.
       </p>
+      <p>
+        I am a seasoned survivalist with years of experience
+        navigating chaos, danger, and magical misadventures. As a
+        former wizard of Unseen University, I possess a deep
+        understanding of the unexpected and specializes in helping
+        clients turn calamity into opportunity. I firmly believe that
+        success isn't about mastering everything—it's about running
+        faster than your problems (and sometimes, the people causing
+        them).
+      </p>
+      <p>
+        Renowned for my quick thinking and adaptability, I have
+        survived countless perilous encounters, from world-ending
+        magical catastrophes to negotiating with hostile sentient
+        luggage. My coaching methods are unconventional yet highly
+        effective for those seeking to embrace unpredictability and
+        achieve success in high-pressure, chaotic environments.
+      </p>
+    </section>
+
+    <!-- services -->
+    <section id="services">
+      <h2>Coaching Services</h2>
+      <ol>
+        <li>
+          <strong>Survival Leadership Coaching</strong>
+          <ul>
+            <li>
+              Master the art of "leading from the rear" while
+              inspiring your team to achieve their goals.
+            </li>
+            <li>
+              Techniques for staying calm (or at least mobile) in
+              moments of extreme danger.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Conflict De-escalation and Diplomacy</strong>
+          <ul>
+            <li>
+              Strategies for resolving disputes with minimal
+              involvement.
+            </li>
+            <li>
+              Insights into working with difficult personalities,
+              including gods, demons, and sentient objects.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Chaos Adaptation Training</strong>
+          <ul>
+            <li>
+              Learn to thrive in fast-changing, high-stakes
+              environments.
+            </li>
+            <li>
+              Develop resilience through Rincewind's proprietary
+              "Optimized Fleeing" methodology.
+            </li>
+          </ul>
+        </li>
+        <li>
+          <strong>Creative Problem Avoidance</strong>
+          <ul>
+            <li>
+              Tips on avoiding problems entirely while maintaining an
+              air of competency.
+            </li>
+            <li>
+              Build confidence in saying, "This is someone else's
+              problem."
+            </li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- testimonials -->
+    <section id="testimonials">
+      <h2>Client Testimonials</h2>
+      <blockquote class="testimonial">
+        "Rincewind's insights on survival strategies transformed the
+        way I approach risk management. He truly has a knack for
+        knowing when to hold 'em and when to run!" <br />
+        <small>— Cohen the Barbarian</small>
+      </blockquote>
+      <blockquote class="testimonial">
+        "Working with Rincewind taught me the value of being prepared
+        for everything. His unorthodox methods may not be traditional,
+        but they're undeniably effective." <br />
+        <small>— The Patrician of Ankh-Morpork</small>
+      </blockquote>
+      <blockquote class="testimonial">
+        "Rincewind helped me realize that sometimes, the best path
+        forward is a quick exit. Highly recommend his Optimized
+        Fleeing course." <br />
+        <small>— Twoflower, Discworld Tourist</small>
+      </blockquote>
     </section>
 
     <!-- schedule -->
     <section id="schedule">
       <h2>Schedule a Meeting</h2>
-      <p>integrate third party calendar here.</p>
       <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut
-        quam dicta est eveniet officia inventore quibusdam sequi
-        corrupti officiis beatae omnis reprehenderit, et vero
-        consectetur quod. Illo ea tenetur nam.
+        Ready to embrace the chaos and unlock your potential? Schedule
+        a meeting today!
       </p>
+      <a href="#" class="button">Book Now</a>
     </section>
 
     <!-- payment -->
     <section id="payment">
       <h2>Make a Payment</h2>
-      <p>integrate third party payment system here.</p>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod
-        saepe nam exercitationem magnam omnis necessitatibus, natus
-        debitis earum nihil voluptatibus? Natus sunt praesentium quos,
-        adipisci accusantium aliquid iure culpa temporibus.
+        Conveniently pay for your coaching sessions online. Click
+        below to proceed.
       </p>
+      <a href="#" class="button">Make a Payment</a>
     </section>
 
     <!-- contact -->
     <section id="contact">
-      <h2>Contact Me</h2>
+      <div class="content">
+        <h2>Contact Me</h2>
+        <p>
+          Have questions or want to learn more about my services?
+          Reach out today!
+        </p>
+        <p>
+          Email:
+          <a href="mailto:rincewind@unseenuniversity.co.wd"
+            >rincewind@unseenuniversity.co.wd</a
+          >
+        </p>
+      </div>
       <form>
         <label for="name">Your Name</label>
         <input type="text" id="name" name="name" required />
@@ -85,13 +215,11 @@
 
         <button type="submit">Send Message</button>
       </form>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-        blanditiis laudantium facilis labore molestiae sint,
-        laboriosam reprehenderit vitae aut esse expedita nam similique
-        earum consectetur quod asperiores. Obcaecati, dignissimos
-        voluptate.
-      </p>
     </section>
+
+    <!-- footer -->
+    <footer>
+      <p>&copy; 2025 Rincewind Coaching. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
